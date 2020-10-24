@@ -1,13 +1,25 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#masthead {
+  height: 160px;
+  background-image: radial-gradient(
+      circle at 16%,
+      rgba(255, 194, 51, 0.9) 3%,
+      rgba(180, 80, 10, 0.97) 19%,
+      rgba(153, 51, 0, 0.9) 28%
+    ),
+    url(http://elcentrodelaraza.org/wp-content/uploads/2020/10/cracked-concrete-background-5.jpg);
+  border-bottom: 3px solid #660000;
 }
