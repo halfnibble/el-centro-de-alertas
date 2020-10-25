@@ -3,11 +3,29 @@
 Example usage of this plugin in a WP Post:
 `public/wp.html`
 
-Or just put the scripts and link tags in your theme's footer.php
+Basically, you will need to upload the contents of `build/js/` and `/build/css` to the JS and CSS folders of your theme. In our case, the theme name is `maishawp`. Then to apply this popup, include the relevent JS and CSS in the footer.php for the theme.
 
-##
+Example:
+```
+<script type="text/javascript" src="/wp-content/themes/maishawp/js/runtime-main.aaaaca6c.js"></script>
+<script type="text/javascript" src="/wp-content/themes/maishawp/js/2.eabf89f0.chunk.js"></script>
+<script type="text/javascript" src="/wp-content/themes/maishawp/js/main.6266548b.chunk.js"></script>
+<link href="/wp-content/themes/maishawp/css/main.269a721a.chunk.css" rel="stylesheet">
+```
 
-Edit the alerts content (or make it Private to disable the alert) here:
+## Local development
+Clone this repo and change into it.
+```
+npm install
+```
+
+```
+HTTPS=true npm start
+```
+
+## Modify the alert popup text
+
+Edit the alert content (or make it "Private" to disable the alert) here:
 [Edit Page "COVID-19 Alert Popup"](http://www.elcentrodelaraza.org/wp-admin/post.php?post=9482&action=edit)
 
 ## Getting Started with Create React App
