@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+# El Centro de Alerta!
+
+Example usage of this plugin in a WP Post:
+`public/wp.html`
+
+Or just put the scripts and link tags in your theme's footer.php
+
+##
+
+Edit the alerts content (or make it Private to disable the alert) here:
+[Edit Page "COVID-19 Alert Popup"](http://www.elcentrodelaraza.org/wp-admin/post.php?post=9482&action=edit)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

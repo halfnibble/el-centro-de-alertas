@@ -49,7 +49,6 @@ class App extends Component<any, IState> {
     }
 
     // Load the COVID-19 alert dialog from page #9482 (COVID-19 Alert Popup)
-
     const POST_URL = `${WORDPRESS_URL}/wp-json/wp/v2/pages/${POST_ID}`;
     axios.get(POST_URL).then((res) => {
       const data: IWordPressPost | undefined = res.data;
