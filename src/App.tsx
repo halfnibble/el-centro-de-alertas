@@ -29,7 +29,8 @@ interface IWordPressPost {
 
 // Set these to match your WordPress domain and Page ID
 const POST_ID = 9482;
-const WORDPRESS_URL = "http:///www.elcentrodelaraza.org";
+const WORDPRESS_PROTOCOL = window.location.protocol;
+const WORDPRESS_DOMAIN = "www.elcentrodelaraza.org";
 
 class App extends Component<any, IState> {
   constructor(props: any) {
@@ -49,7 +50,7 @@ class App extends Component<any, IState> {
     }
 
     // Load the COVID-19 alert dialog from page #9482 (COVID-19 Alert Popup)
-    const POST_URL = `${WORDPRESS_URL}/wp-json/wp/v2/pages/${POST_ID}`;
+    const POST_URL = `${WORDPRESS_PROTOCOL}//${WORDPRESS_DOMAIN}/wp-json/wp/v2/pages/${POST_ID}`;
     axios.get(POST_URL).then((res) => {
       const data: IWordPressPost | undefined = res.data;
       if (data && data.status === PostStatusEnum.publish) {
