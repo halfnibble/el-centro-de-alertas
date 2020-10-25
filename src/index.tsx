@@ -1,13 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 const headerContainer = document.getElementById("masthead");
 const alertPopupEl = document.createElement("div");
 alertPopupEl.id = "alert-popup-modal";
-headerContainer?.appendChild(alertPopupEl);
+headerContainer?.parentElement?.prepend(alertPopupEl);
 
 ReactDOM.render(
   <React.StrictMode>
